@@ -14,7 +14,6 @@
 			html,body{
 				width: 100%;
 				height: 100%;
-				
 				background: #ccc;
 			}
 			*{
@@ -79,19 +78,18 @@
 				<li class="newsitem">我是一条新闻我是一条新闻我是一条新闻我是一条新闻我是一条新闻我是一条新闻我是一条新闻我是一条新闻我是一条新闻我是一条新闻</li>
 				<li class="newsitem">我是一条新闻我是一条新闻我是一条新闻我是一条新闻我是一条新闻我是一条新闻我是一条新闻我是一条新闻我是一条新闻我是一条新闻</li>
 			</ul>
-			
 		</div>
 		<script src="js/jquery-2.0.0.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function () {
 				//滚动部分容器高度
-			    var containerHeight = $('#container').height();			//590
+			    var containerHeight = $('#container').height();		
 		        
 		        //与父元素顶部的偏移量
-		        var topHeight = $("#ads").position().top;		//945
+		        var topHeight = $("#ads").position().top;	
 		        
 		        //承载图片的自身高度
-		        var selfHeight = parseInt($("#ads").css("height"));    //100px
+		        var selfHeight = parseInt($("#ads").css("height"));   
 		        
 		        //承载图片的li元素底部与容器container底部齐平时，已滚动的高度
 		        var top1 = topHeight + selfHeight - containerHeight;
